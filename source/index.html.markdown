@@ -1,0 +1,15 @@
+---
+title:
+---
+
+## My Vision for Roseville
+
+I am 28 years old and a former resident of Minneapolis. Raised in Northeast Minneapolis, I have many memories in Roseville. It’s where I learned to swim in Lake Josephine,  went school shopping with my mom every August, and celebrated many birthdays. I moved to Roseville in March of 2017, shortly after getting married. My husband and I chose to move to Roseville as an escape from South Minneapolis’ rising rents.
+
+There are many issues facing the suburban areas of the Twin Cities as rents rise, neighborhoods gentrify, and people seek a new home close to their roots.  I believe the many needs facing our City are intersectional. I also believe the solutions are intersectional and creating policy with this in mind can help get to the root of our issues and bring forth positive change.
+
+I envision the community of Roseville becoming leaders of the urban future where we help each other grow.  I will bring forth policy ideas which protect our most vulnerable residents, continue Roseville’s growth as a steward of environmental sustainability, and improve accessibility, attainability, and affordability of renting  or owning a home.
+
+As a council member, I will work towards these policy principals by including the residents of Roseville. I believe there are many organizations and individuals working towards a better Roseville and I wish to return their platform to effecting change through community input, collaboration, and action.
+
+

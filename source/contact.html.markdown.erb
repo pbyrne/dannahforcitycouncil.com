@@ -1,0 +1,25 @@
+---
+title: Contact Me
+---
+
+## Mail
+
+<% data.contact.address.lines.each do |line| %>
+  <%= line %><br>
+<% end %>
+
+## Phone
+
+<%= data.contact.phone %>
+
+## Email
+
+<%= mail_to data.contact.email, data.contact.email %>
+
+## Twitter
+
+<%= link_to "@#{data.contact.twitter_handle}", "https://twitter.com/#{data.contact.twitter_handle}" %>
+
+## Facebook
+
+<%= link_to "Dannah Thomspon for Roseville City Council", data.contact.facebook %>

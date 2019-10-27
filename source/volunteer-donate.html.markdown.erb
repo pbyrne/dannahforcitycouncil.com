@@ -1,0 +1,22 @@
+---
+title: Volunteer & Donate
+---
+
+## Volunteer & Donate
+
+### Volunteer
+Several volunteer opportunities are available. If you’d like to door knock or phone bank, please send an email to <%= mail_to data.contact.email, data.contact.email %>. I will be in touch with you regarding dates and times of volunteer opportunities!
+
+### Host an Event
+
+If you would like to host an event for me or if you want me to attend an event you already have planned, please email <%= mail_to data.contact.email, data.contact.email %>.
+
+### Donate
+
+I need donations to purchase Yard Signs, Flyers, and other literature. If you would like to do so, you can donate <%= link_to "with PayPal", data.contact.paypal %>.
+
+Checks can be made payable to:
+
+<% data.contact.address.lines.each do |line| %>
+  <%= line %><br>
+<% end %>

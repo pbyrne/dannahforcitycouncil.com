@@ -6,11 +6,31 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= [current_page.data.title, "Dannah Thompson for Roseville City Council"].compact.join(" | ") %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <header>
+      <nav>
+        <h1>Dannah Thompson for Roseville City Council</h1>
+        <ul>
+          <li><%= link_to "My Vision for Roseville", "/" %></li>
+          <li><%= link_to "About Me", "/about" %></li>
+          <li><%= link_to "The Issues", "/issues" %></li>
+          <li><%= link_to "Media", "/media" %></li>
+          <li><%= link_to "Contact Me", "/contact" %></li>
+          <li><%= link_to "Volunteer & Donate", "/volunteer-donate" %></li>
+        </ul>
+      </nav>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      <p>
+      Copyright © 2016–<%= Date.today.year %> Dannah Thompson for Roseville City Council
+      </p>
+    </footer>
   </body>
 </html>
