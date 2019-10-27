@@ -1,0 +1,61 @@
+$brand_dark: #221834;
+$brand_medium: #7271a1;
+$charcoal: #333;
+$whiteish: #fcfcfc;
+
+body {
+  background: $whiteish;
+  color: $charcoal;
+  font-family: sans-serif;
+  max-width: 50em; // temporary
+  margin: 0 auto; // temporary
+}
+
+
+header {
+  background: $brand_dark;
+  color: $whiteish;
+
+  h1 {
+    text-align: center;
+  }
+
+  a, a:visited {
+    color: $brand_medium;
+  }
+
+  a:hover, a.current-page {
+    color: $whiteish;
+  }
+}
+
+nav {
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: 0 0.5em;
+    }
+  }
+}
+
+ul.issues {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: block;
+  }
+}
+
+img.inset-right {
+  float: right;
+}
+

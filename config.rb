@@ -31,11 +31,13 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def nav_link_to(title:, url:)
+    link_class = "current-page" if url == "/#{current_page.path}"
+
+    link_to title, url, class: link_class
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
