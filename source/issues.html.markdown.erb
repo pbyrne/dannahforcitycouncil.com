@@ -1,0 +1,15 @@
+---
+title: Issues
+---
+
+<% issues = app.sitemap.resources.select { |x| x.path.start_with?("issues/") }.sort_by { |x| x.data.order } %>
+
+<ul>
+<% issues.each do |issue| %>
+  <li>
+  <h3><%= link_to issue.data.title, issue %></h3>
+  <p><%= issue.data.excerpt %></p>
+  <p><%= link_to "Read more…", issue %></p>
+  </li>
+<% end %>
+</ul>
