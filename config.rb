@@ -56,5 +56,5 @@ configure :staging do
 end
 
 configure :production do
-  config[:google_analytics_key] = "TK"
+  config[:google_analytics_key] = "UA-151307154-2"
 end
