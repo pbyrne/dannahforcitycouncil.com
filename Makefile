@@ -1,10 +1,10 @@
 .PHONY: build
 build:
-	bin/build production
+	bundle exec middleman build -e production
 
 .PHONY: build-staging
 build-staging:
-	bin/build staging
+	bundle exec middleman build -e staging
 
 .PHONY: serve
 serve:
@@ -15,7 +15,7 @@ deploy: build
 	bin/deploy dannahforcitycouncil-com
 
 .PHONY: stage
-stage: build
+stage: build-staging
 	bin/deploy staging-dannahforcitycouncil-com
 
 .PHONY: clean
