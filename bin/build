@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+	environment=production
+else
+	environment=$1
+fi
+
+echo "Building for $environment environment"
+bundle exec middleman build -e $environment

@@ -1,6 +1,10 @@
 .PHONY: build
 build:
-	bundle exec middleman build
+	bin/build production
+
+.PHONY: build-staging
+build-staging:
+	bin/build staging
 
 .PHONY: serve
 serve:

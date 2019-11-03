@@ -50,3 +50,11 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
+
+configure :staging do
+  config[:google_analytics_key] = "UA-151307154-1"
+end
+
+configure :production do
+  config[:google_analytics_key] = "TK"
+end
