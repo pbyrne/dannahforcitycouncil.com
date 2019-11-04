@@ -24,7 +24,7 @@ header {
     color: $brand_medium;
   }
 
-  a:hover, a.current-page {
+  a:hover, a[aria-current=page] {
     color: $whiteish;
   }
 }

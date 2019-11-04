@@ -32,10 +32,13 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/basics/helper-methods/
 
 helpers do
-  def nav_link_to(title:, url:)
-    link_class = "current-page" if url == "/#{current_page.path}"
+  def nav_link_to(title:, url:, options: {})
+    if url == "/#{current_page.path}"
+      options[:aria] ||= {}
+      options[:aria][:current] = "page"
+    end
 
-    link_to title, url, class: link_class
+    link_to title, url, options
   end
 end
 
