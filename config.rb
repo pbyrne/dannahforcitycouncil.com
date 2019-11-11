@@ -32,13 +32,20 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/basics/helper-methods/
 
 helpers do
-  def nav_link_to(title:, url:, options: {})
-    if url == "/#{current_page.path}"
+  def current_url?(url)
+    url == "/#{current_page.path}"
+  end
+
+  def wrapped_nav_link_to(title:, url:, options: {})
+    if current_url?(url)
       options[:aria] ||= {}
       options[:aria][:current] = "page"
+      wrapper_class = "current"
     end
 
-    link_to title, url, options
+    content_tag :li, class: wrapper_class do
+      link_to title, url, options
+    end
   end
 end
 
