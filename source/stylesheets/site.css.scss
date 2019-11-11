@@ -50,10 +50,10 @@ nav {
     padding: 0 0.5em;
 
     a, a:hover {
-      color: $brand_medium;
+      color: $whiteish;
     }
 
-    &.current, &:hover {
+    &.current {
       color: $charcoal;
       background: $whiteish;
 
@@ -63,7 +63,7 @@ nav {
       }
     }
 
-    &:hover {
+    &.other:hover {
       color: $whiteish;
       background: $brand_medium;
 

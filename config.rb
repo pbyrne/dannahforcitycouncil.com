@@ -41,6 +41,8 @@ helpers do
       options[:aria] ||= {}
       options[:aria][:current] = "page"
       wrapper_class = "current"
+    else
+      wrapper_class = "other"
     end
 
     content_tag :li, class: wrapper_class do
