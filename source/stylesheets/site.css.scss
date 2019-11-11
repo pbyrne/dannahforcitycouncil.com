@@ -79,6 +79,11 @@ main {
   display: block; // For legacy browsers that don't recognize the element
   max-width: $wide;
   margin: 0 auto;
+
+  a {
+    color: $brand_dark;
+    background: $whiteish;
+  }
 }
 
 ul.issues {

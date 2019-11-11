@@ -49,6 +49,14 @@ helpers do
       link_to title, url, options
     end
   end
+
+  def issues
+    app.sitemap.resources.select do |resource|
+      resource.path.start_with?("issues/")
+    end.sort_by do |resource|
+      resource.data.order
+    end
+  end
 end
 
 # Build-specific configuration

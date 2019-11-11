@@ -1,8 +1,7 @@
 ---
+description: Dannah Thompson's priorities for Roseville City Council.
 title: Issues
 ---
-
-<% issues = app.sitemap.resources.select { |x| x.path.start_with?("issues/") }.sort_by { |x| x.data.order } %>
 
 <ul class="issues">
 <% issues.each do |issue| %>
