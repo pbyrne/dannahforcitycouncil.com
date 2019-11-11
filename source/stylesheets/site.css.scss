@@ -3,12 +3,17 @@ $brand_medium: #7271a1;
 $charcoal: #333;
 $whiteish: #eeeeee;
 
+$wide: 43em;
+
 body {
   background: $whiteish;
   color: $charcoal;
+  font-size: 18px;
   font-family: sans-serif;
-  max-width: 50em; // temporary
-  margin: 0 auto; // temporary
+  font-weight: 200;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -16,8 +21,15 @@ header {
   background: $brand_dark;
   color: $whiteish;
 
+  nav {
+    max-width: $wide;
+    margin: 0 auto;
+  }
+
   h1 {
     text-align: center;
+    margin: 0;
+    padding-top: 1em;
   }
 
   a, a:visited {
@@ -46,6 +58,12 @@ nav {
   }
 }
 
+main {
+  display: block; // For legacy browsers that don't recognize the element
+  max-width: $wide;
+  margin: 0 auto;
+}
+
 ul.issues {
   list-style: none;
   padding: 0;
@@ -59,3 +77,21 @@ img.inset-right {
   float: right;
 }
 
+h1, h2, h3, h4 {
+  margin-bottom: 0;
+  font-weight: 400;
+
+  & + p {
+    margin-top: 0;
+  }
+}
+
+.breakout {
+  display: block;
+}
+
+footer {
+  max-width: $wide;
+  margin: 0 auto;
+  text-align: center;
+}

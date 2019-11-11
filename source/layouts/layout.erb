@@ -23,14 +23,16 @@
       </nav>
     </header>
 
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
 
     <hr>
 
     <footer>
       <p>
-      Copyright © 2016–<%= Date.today.year %>
       Paid and Prepared by the Dannah Thompson for Roseville City Council Committee
+      <span class="breakout">Copyright © 2016–<%= Date.today.year %></span>
       </p>
 
       <p>
