@@ -3,7 +3,20 @@ $brand_medium: #7271a1;
 $charcoal: #333;
 $whiteish: #f0eef0;
 
+$narrow: 30em;
 $wide: 43em;
+
+@mixin on-mobile {
+  @media only screen and (max-width: $narrow) {
+    @content;
+  }
+}
+
+@mixin off-mobile {
+  @media only screen and (min-width: $narrow + 1) {
+    @content;
+  }
+}
 
 body {
   background: $whiteish;
@@ -15,7 +28,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 header {
   background: $brand_dark;
@@ -45,7 +57,9 @@ nav {
   }
 
   li {
-    border-radius: 5px 5px 0 0;
+    @include off-mobile {
+      border-radius: 5px 5px 0 0;
+    }
     display: inline-block;
     padding: 0 0.5em;
 
@@ -53,13 +67,21 @@ nav {
       color: $whiteish;
     }
 
-    &.current {
-      color: $charcoal;
-      background: $whiteish;
-
-      a {
+    @include off-mobile {
+      &.current {
         color: $charcoal;
         background: $whiteish;
+
+        a {
+          color: $charcoal;
+          background: $whiteish;
+        }
+      }
+    }
+
+    @include on-mobile {
+      &.current {
+        font-weight: 800;
       }
     }
 
@@ -132,4 +154,10 @@ footer {
   max-width: $wide;
   margin: 0 auto;
   text-align: center;
+}
+
+@include on-mobile {
+  header, main, footer {
+    padding: 0 0.5em;
+  }
 }
