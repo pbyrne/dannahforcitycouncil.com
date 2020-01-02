@@ -154,6 +154,11 @@ h1, h2, h3, h4 {
   }
 }
 
+h3 {
+  font-size: $scale0;
+  font-weight: 500;
+}
+
 .breakout {
   display: block;
 }
