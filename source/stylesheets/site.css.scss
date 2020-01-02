@@ -3,8 +3,13 @@ $brand_medium: #7271a1;
 $charcoal: #333;
 $whiteish: #f0eef0;
 
-$narrow: 30em;
-$wide: 43em;
+$interval: 1.5;
+$scale0: 1.2rem;
+$scale1: $scale0 * $interval;
+$scale2: $scale1 * $interval;
+
+$narrow: 30rem;
+$wide: 48rem;
 
 @mixin on-mobile {
   @media only screen and (max-width: $narrow) {
@@ -21,10 +26,10 @@ $wide: 43em;
 body {
   background: $whiteish;
   color: $charcoal;
-  font-size: 18px;
+  font-size: $scale0;
   font-family: sans-serif;
   font-weight: 200;
-  line-height: 1.4;
+  line-height: $interval;
   margin: 0;
   padding: 0;
 }
@@ -39,9 +44,11 @@ header {
   }
 
   h1 {
-    text-align: center;
+    font-size: $scale1;
+    font-weight: 300;
     margin: 0;
-    padding-top: 1em;
+    padding-top: 1rem;
+    text-align: center;
   }
 }
 
@@ -61,7 +68,7 @@ nav {
       border-radius: 5px 5px 0 0;
     }
     display: inline-block;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
 
     a, a:hover {
       color: $whiteish;
@@ -123,8 +130,8 @@ blockquote {
   clear: both;
   color: $whiteish;
   font-style: italic;
-  margin: 1em 0;
-  padding: 0.5em 1em;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
   text-align: center;
 
   p {
@@ -138,7 +145,8 @@ img.inset-right {
 
 h1, h2, h3, h4 {
   margin-bottom: 0;
-  font-weight: 400;
+  font-size: $scale1;
+  font-weight: 300;
   line-height: 1;
 
   & + p {
@@ -158,6 +166,6 @@ footer {
 
 @include on-mobile {
   header, main, footer {
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
   }
 }
