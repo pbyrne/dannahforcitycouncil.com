@@ -124,7 +124,7 @@ ul.issues {
   }
 }
 
-blockquote {
+body.index blockquote {
   background: $brand_medium;
   border-radius: 5px;
   clear: both;
@@ -172,5 +172,55 @@ footer {
 @include on-mobile {
   header, main, footer {
     padding: 0 0.5rem;
+  }
+}
+
+.post-summary {
+  h3 {
+    position: relative;
+
+    @include on-mobile {
+      time {
+        display: block;
+      }
+
+      .post-anchor {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    @include off-mobile {
+      .post-anchor {
+        visibility: hidden;
+      }
+
+      &:hover .post-anchor {
+        visibility: visible;
+      }
+    }
+  }
+
+  .media {
+    margin: 1rem 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid $brand_medium;
+    margin: 0;
+    padding: 0 1rem;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
