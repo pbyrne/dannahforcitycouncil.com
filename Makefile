@@ -1,13 +1,13 @@
 .PHONY: build
-build:
+build: fetch-facebook
 	bundle exec middleman build -e production
 
 .PHONY: build-staging
-build-staging:
+build-staging: fetch-facebook
 	bundle exec middleman build -e staging
 
 .PHONY: serve
-serve:
+serve: fetch-facebook
 	bundle exec middleman serve
 
 .PHONY: deploy
@@ -21,3 +21,7 @@ stage: build-staging
 .PHONY: clean
 clean:
 	rm -Rf build/
+
+.PHONY: fetch-facebook
+fetch-facebook:
+	bin/fetch-facebook-posts

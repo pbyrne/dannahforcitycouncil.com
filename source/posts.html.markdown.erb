@@ -1,0 +1,32 @@
+---
+description: Dannah's thoughts on current events.
+title: Statements from Dannah
+---
+
+<% data.facebook_posts.each do |post| %>
+  <article class="post-summary" id="post-<%= post.id %>">
+    <h3>
+      Originally <%= link_to "posted on Facebook", post.permalink_url %>
+      <time datetime="<%= post.created_time %>"><%= Date.parse(post.created_time).strftime("%A, %-d %B %Y") %></time>
+      <a href="#post-<%= post.id %>" class="post-anchor" title="Permalink to this statement">#</a>
+    </h3>
+    <% (post.attachments&.data || []).each do |attachment| %>
+      <p class="media">
+      <a href="<%= attachment.url %>">
+        <% case attachment.media_type %>
+        <% when "video" %>
+          Watch the video!
+        <% else %>
+          <% if attachment.media&.image %>
+            <%= image_tag attachment.media.image.src,
+              alt: attachment.description %>
+          <% else %>
+            <blockquote><%= attachment.description %></blockquote>
+          <% end %>
+        <% end %>
+      </a>
+      </p>
+    <% end %>
+    <%= render_markdown(post.message) %>
+  </article>
+<% end %>

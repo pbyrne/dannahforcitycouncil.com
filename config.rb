@@ -57,6 +57,18 @@ helpers do
       resource.data.order
     end
   end
+
+  def render_markdown(input)
+    Kramdown::Document.new(input).to_html
+  end
+
+  def excerpt_facebook_post(input)
+    first, *rest = input.split(/\n\n/)
+    [
+      truncate_words(first, length: 64, omission: "…"),
+      (link_to("See more", "#") if rest.any?),
+    ].compact.join(" ")
+  end
 end
 
 # Build-specific configuration
