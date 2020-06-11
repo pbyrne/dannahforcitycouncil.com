@@ -1,10 +1,10 @@
 .PHONY: build
 build: fetch-facebook
-	bundle exec middleman build -e production
+	bundle exec middleman build
 
 .PHONY: build-staging
 build-staging: fetch-facebook
-	bundle exec middleman build -e staging
+	bundle exec middleman build
 
 .PHONY: serve
 serve: fetch-facebook
