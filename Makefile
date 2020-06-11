@@ -2,10 +2,6 @@
 build: fetch-facebook
 	bundle exec middleman build
 
-.PHONY: build-staging
-build-staging: fetch-facebook
-	bundle exec middleman build
-
 .PHONY: serve
 serve: fetch-facebook
 	bundle exec middleman serve
