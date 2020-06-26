@@ -5,9 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= tag :meta, name: "description", content: current_page.data.description || current_page.data.excerpt || "Campaign website for Dannah Thompson for Roseville City Council"%>
+    <%= tag :meta, name: "description", content: page_description %>
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= [current_page.data.title, current_page.data.section, "Dannah Thompson for Roseville City Council"].compact.join(" | ") %></title>
+    <title><%= page_title %></title>
+    <%= tag :meta, property: "og:url", content: current_page.url %>
+    <%= tag :meta, property: "og:title", content: page_title %>
+    <%= tag :meta, property: "og:description", content: page_description %>
+    <%= tag :meta, property: "og:site_name", content: site_name %>
+    <%= tag :meta, property: "og:image", content: "#{ENV["URL"]}#{image_path("dannah-portrait.jpg")}" %>
     <%= stylesheet_link_tag "site" %>
     <%# javascript_include_tag "site" %>
   </head>

@@ -32,6 +32,18 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/basics/helper-methods/
 
 helpers do
+  def site_name
+    "Dannah Thompson for Roseville City Council"
+  end
+
+  def page_title(page = current_page)
+    [page.data.title, page.data.section, site_name].compact.join(" | ")
+  end
+
+  def page_description(page = current_page)
+    page.data.description || page.data.excerpt || "Campaign website for #{site_name}"
+  end
+
   def current_url?(url)
     url == "/#{current_page.path}"
   end
