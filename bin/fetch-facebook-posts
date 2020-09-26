@@ -20,7 +20,7 @@ function main() {
       echo "All done! No more pages."
       break
     else
-      Echo Continuing on…
+      echo Continuing on…
     fi
   done
   echo "All done downloading!"
