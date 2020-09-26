@@ -32,6 +32,12 @@ helpers do
     "Dannah Thompson for Roseville City Council"
   end
 
+  def endorsement_image(alt:, href:, src:)
+    link_to href, class: "endorsement-logo", title: alt do
+      image_tag src, alt: alt
+    end
+  end
+
   def page_title(page = current_page)
     [page.data.title, page.data.section, site_name].compact.join(" | ")
   end

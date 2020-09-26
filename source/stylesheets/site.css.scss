@@ -163,6 +163,21 @@ h3 {
   display: block;
 }
 
+.endorsements-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  a.endorsement-logo {
+    background: white;
+    display: inline-block;
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 footer {
   max-width: $wide;
   margin: 0 auto;
