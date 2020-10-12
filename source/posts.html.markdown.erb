@@ -14,8 +14,10 @@ title: Statements from Dannah
       <p class="media">
       <a href="<%= attachment.url %>">
         <% case attachment.media_type %>
-        <% when "video" %>
+        <% when "video", "video_inline" %>
           Watch the video!
+        <% when "link" %>
+          <blockquote><%= attachment.description %></blockquote>
         <% else %>
           <% if attachment.media&.image %>
             <%= image_tag attachment.media.image.src,
