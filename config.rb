@@ -76,6 +76,10 @@ helpers do
     Kramdown::Document.new(input).to_html
   end
 
+  def auto_link(input)
+    Rinku.auto_link(input)
+  end
+
   def excerpt_facebook_post(input)
     first, *rest = input.split(/\n\n/)
     [

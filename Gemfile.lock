@@ -78,6 +78,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rinku (2.0.6)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -95,6 +96,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 4.2)
+  rinku
 
 BUNDLED WITH
    2.1.4

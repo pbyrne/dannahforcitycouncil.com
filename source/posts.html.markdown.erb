@@ -29,6 +29,6 @@ title: Statements from Dannah
       </a>
       </p>
     <% end %>
-    <%= render_markdown(post.message) %>
+    <%= auto_link(render_markdown(post.message)) %>
   </article>
 <% end %>
