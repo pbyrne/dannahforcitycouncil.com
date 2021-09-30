@@ -4,3 +4,5 @@
 .sass-cache
 build/
 data/facebook_posts.json
+node_modules/
+_site/

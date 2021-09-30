@@ -1,11 +1,11 @@
 ---
 description: My vision for our city is to become a leader for inclusion, racial equity and environmental stewardship in the Twin Cities.
-title:
+layout: layout
 ---
 
 > My vision for our city is to become a leader for inclusion, racial equity and environmental stewardship in the Twin Cities.
 
-<%= image_tag "dannah-portrait.jpg", class: "inset inset-right", alt: "Portrait of Dannah Thompson" %>
+<img src="/images/dannah-portrait.jpg" alt="Portrait of Dannah Thompson" class="inset inset-right">
 
 ## My vision for Roseville
 
@@ -20,15 +20,14 @@ I have set a bold vision for Roseville, because I believe in a future worth figh
 ## Endorsements
 
 <section class="endorsements-wrapper">
-<%= endorsement_image(href: "https://www.dfl.org", alt: "DFL endorsement", src: "endorsements-2020/dfl.png") %>
-<%= endorsement_image(href: "https://www.womenwinning.org", alt: "Women Winning endorsement", src: "endorsements-2020/women-winning.jpg") %>
-<%= endorsement_image(href: "https://www.local322.net", alt: "Carpenters Local 322 endorsement", src: "endorsements-2020/carpenters-local-322.png") %>
-<%= endorsement_image(href: "https://northcountrycarpenter.org", alt: "Regional Council of Carpenters endorsement", src: "endorsements-2020/carpenters-regional-council.jpg") %>
+{% for endorsement in endorsements %}
+  {% include endorsement_link endorsement %}
+{% endfor %}
 </section>
 
 ## About me
 
-I am an Anishinaabe woman and a descendant of the White Earth Reservation. I was raised in Northeast Minneapolis. I earned my Bachelor's degree in political science with a minor in justice and Peace Studies at the University of St. Thomas. I have worked at a small law firm in downtown Minneapolis since 2010 where I am a paralegal supervisor. My husband Brett and I moved to Roseville in 2016 after our rent in Minneapolis continued to rise year after year.
+I am an Anishinaabe woman and a descendant of the White Earth Reservation. I was raised in Northeast Minneapolis. I earned my Bachelor’s degree in political science with a minor in justice and Peace Studies at the University of St. Thomas. I have worked at a small law firm in downtown Minneapolis since 2010 where I am a paralegal supervisor. My husband Brett and I moved to Roseville in 2016 after our rent in Minneapolis continued to rise year after year.
 
 I decided to run for office to protect residents from rising and unaffordable rents, to ensure our property taxes are used responsibly, and to create a future for our city that is brighter than our past.
 

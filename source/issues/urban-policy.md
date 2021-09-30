@@ -1,11 +1,12 @@
 ---
 excerpt: "My Urban Policy will have four areas of focus: Affordable Housing, Small Business, Urban Development, and Sustainability. By designing policy focused on these areas of growth, residents can ensure the City maintains the balance between suburban and urban living and doing so in an ecologically balanced manner rooted in social justice and equity."
+layout: layout
 order: 2
 section: Issues
 title: Urban Policy
 ---
 
-## <%= current_page.data.title %>
+## {{ page.title }}
 
 My Urban Policy will have four areas of focus: Affordable Housing, Small Business, Urban Development, and Sustainability. By designing policy focused on these areas of growth, residents can ensure the City maintains the balance between suburban and urban living and doing so in an ecologically balanced manner rooted in social justice and equity.
 

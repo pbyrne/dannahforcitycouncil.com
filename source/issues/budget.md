@@ -1,11 +1,12 @@
 ---
 excerpt: We must anticipate the City’s needs and be responsible in our financial planning for the future! As a Council Member, I will work towards a fiscal policy which promotes a balanced budget and protects our residential homeowners from increasing property taxes. My budget policy includes pursuing alternative revenue generating solutions and prioritizing our City’s investments.
+layout: layout
 order: 4
 section: Issues
 title: Budget
 ---
 
-## <%= current_page.data.title %>
+## {{ page.title }}
 
 We must anticipate the City’s needs and be responsible in our financial planning for the future! As a Council Member, I will work towards a fiscal policy which promotes a balanced budget and protects our residential homeowners from increasing property taxes. My budget policy includes pursuing alternative revenue generating solutions and prioritizing our City’s investments.
 

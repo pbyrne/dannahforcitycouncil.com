@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* $brand_dark: #221834; */
+/* $brand_medium: #7271a1; */
+
+body {
+  font-size: 20px;
+  @apply bg-purple-10;
+  @apply font-light;
+  @apply font-sans;
+  @apply text-gray-800;
+}
+
+header {
+  @apply bg-purple-900;
+  @apply text-center;
+  @apply text-gray-100;
+  @apply w-screen;
+
+  & nav {
+    @apply max-w-full;
+    @apply md:max-w-3xl;
+    @apply mx-auto;
+  }
+
+  & h1 {
+    @apply text-3xl;
+    @apply py-2;
+  }
+
+  & ul {
+    @apply list-none;
+
+    & li {
+      @apply inline-block;
+      @apply mx-1.5;
+      @apply px-1;
+      @apply py-0.5;
+      @apply rounded-t;
+      @apply text-lg;
+    }
+
+    & li.current {
+      @apply text-purple-900;
+      @apply bg-gray-100;
+    }
+
+    & li:hover {
+      @apply text-gray-100;
+      @apply bg-purple-400;
+    }
+  }
+}
+
+hr {
+  @apply border-purple-400;
+  @apply border-t;
+  @apply mx-10;
+  @apply my-4;
+}
+
+footer {
+  @apply text-center;
+  @apply my-4;
+
+  & .breakout {
+    @apply block;
+  }
+}
+
+
+main {
+  @apply max-w-full;
+  @apply md:max-w-3xl;
+  @apply mx-auto;
+
+  & blockquote {
+    @apply bg-purple-400;
+    @apply italic;
+    @apply m-4;
+    @apply p-4;
+    @apply rounded-lg;
+    @apply text-center;
+    @apply text-gray-100;
+  }
+
+  & h2 {
+    @apply font-medium;
+    @apply mt-2;
+    @apply text-3xl;
+  }
+
+
+  & h3 {
+    @apply font-medium;
+    @apply mt-3;
+  }
+
+  & a {
+    @apply underline;
+  }
+
+  & p {
+    @apply mb-2;
+
+    &.compact {
+      @apply leading-none;
+    }
+  }
+}
+
+.inset-right {
+  @apply float-right;
+  @apply m-2;
+}
+
+.endorsements-wrapper {
+  @apply flex;
+  @apply flex-1;
+  @apply flex-wrap;
+
+  & .endorsement-logo {
+    @apply inline-block;
+    @apply bg-white;
+    @apply w-1/2;
+  }
+}
+
+.message--title {
+  & .message--title-anchor {
+    visibility: hidden;
+  }
+
+  &:hover .message--title-anchor {
+    visibility: visible;
+  }
+}
