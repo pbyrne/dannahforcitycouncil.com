@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ pageTitle }}</title>
+    <meta property="og:url" content="{{ page.url }}"}>
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ pageDescription }}">
+    <meta property="og:site_name" content="{{ settings.siteName }}">
+    <meta property="og:image" content="/images/dannah-portrait.jpg">
+    <link rel="stylesheet" href="/stylesheets/site.css" />
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body class="{{ bodyClasses | join: " " }}">
+
+    <header>
+      <nav>
+        <h1>Dannah Thompson for Roseville City Council</h1>
+        <ul>
+          {% include nav_link title: "My Vision for Roseville", url: "/" %}
+          {% include nav_link title: "Issues", url: "/issues/" %}
+          {% include nav_link title: "Statements", url: "/posts/" %}
+          {% include nav_link title: "Contact & Media", url: "/contact/" %}
+          {% include nav_link title: "Volunteer & Donate", url: "/volunteer-donate/" %}
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <hr>
+
+    <footer>
+      <p>
+      Paid and Prepared by the Dannah Thompson for Roseville City Council Committee
+      <span class="breakout">Copyright © 2016–{{ "now" | date: "%Y" }}</span>
+      </p>
+    </footer>
+
+    {% include google_analytics %}
+  </body>
+</html>

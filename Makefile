@@ -1,15 +1,11 @@
 .PHONY: build
-build: fetch-facebook
-	bundle exec middleman build
+build:
+	yarn run build
 
 .PHONY: serve
-serve: fetch-facebook
-	bundle exec middleman serve
+serve:
+	yarn run serve
 
 .PHONY: clean
 clean:
-	rm -Rf build/
-
-.PHONY: fetch-facebook
-fetch-facebook:
-	bin/fetch-facebook-posts
+	yarn run clean

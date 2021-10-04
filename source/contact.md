@@ -1,29 +1,32 @@
 ---
 description: Contact information for and media about Dannah Thompson for Roseville City Council.
+layout: layout
 title: Contact Me
 ---
 
 ## Mail
 
-<% data.contact.address.lines.each do |line| %>
-  <%= line %><br>
-<% end %>
+<p class="compact">
+{% for line in contact.address -%}
+{{ line }}<br>
+{% endfor -%}
+</p>
 
 ## Phone
 
-<%= data.contact.phone %>
+{{ contact.phone }}
 
 ## Email
 
-<%= mail_to data.contact.email, data.contact.email %>
+[{{ contact.email }}](mailto:{{ contact.email }})
 
 ## Twitter
 
-<%= link_to "@#{data.contact.twitter_handle}", "https://twitter.com/#{data.contact.twitter_handle}" %>
+[@{{ contact.twitterHandle }}](https://twitter.com/{{ contact.twitterHandle }})
 
 ## Facebook
 
-<%= link_to "Dannah Thomspon for Roseville City Council", data.contact.facebook %>
+[Dannah Thomspon for Roseville City Council]({{ contact.facebook }})
 
 ## Campaign videos & City Council appearances
 

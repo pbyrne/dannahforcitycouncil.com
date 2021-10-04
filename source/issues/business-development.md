@@ -1,11 +1,12 @@
 ---
 excerpt: As a Council Member my number one priority will be the City’s relationship with the Community. We are elected to represent your voices at City Hall. I promise to restore this relationship with our community. In addition to my commitment to people before profit I will focus on the relationship between our police and the community, work to expand the responsibilities of the Volunteer Coordinator, and create supplemental Community Advisory Boards to work hand in hand with our City Committees.
+layout: layout
 order: 3
 section: Issues
 title: Community-City Relationship
 ---
 
-## <%= current_page.data.title %>
+## {{ page.title }}
 
 As a Council Member my number one priority will be the City’s relationship with the Community. We are elected to represent your voices at City Hall. I promise to restore this relationship with our community. In addition to my commitment to people before profit I will focus on the relationship between our police and the community, work to expand the responsibilities of the Volunteer Coordinator, and create supplemental Community Advisory Boards to work hand in hand with our City Committees.
 
