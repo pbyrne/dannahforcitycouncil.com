@@ -1,12 +1,10 @@
 ---
 excerpt: I will work aggressively to ensure a healthy and sustainable environment for future generations to come. I believe Roseville can be carbon neutral by 2050. Within the City Campus we already use Geothermal and Solar technologies. We can work toward a carbon neutral future by expanding these technologies throughout the City and working with the community on equitable green policies. Many cities in the United States are working toward aggressive carbon reduction standards and I will work to gather community input to adapt the current available frameworks to fit Roseville’s needs.
-layout: layout
+layout: issue
 order: 1
 section: Issues
 title: Environmental Sustainability
 ---
-
-## {{ page.title }}
 
 I will work aggressively to ensure a healthy and sustainable environment for future generations to come. I believe Roseville can be carbon neutral by 2050. Within the City Campus we already use Geothermal and Solar technologies. We can work toward a carbon neutral future by expanding these technologies throughout the City and working with the community on equitable green policies. Many cities in the United States are working toward aggressive carbon reduction standards and I will work to gather community input to adapt the current available frameworks to fit Roseville’s needs.
 
