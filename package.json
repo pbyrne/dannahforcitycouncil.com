@@ -10,7 +10,7 @@
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^8.0.1",
     "postcss-purgecss": "^2.0.3",
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "^2.2.19"
   },
   "scripts": {
     "build": "npm-run-all clean build:*",
