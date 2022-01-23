@@ -6,7 +6,7 @@ This is the source for [Dannah for City Council](https://dannahforcitycouncil.co
 Setup
 -----
 
-This uses [Eleventy](https://www.11ty.dev) to build static HTML, so you'll need Node and Yarn to get started. Then `yarn install` should get you going. It optionally uses Make to perform the various common commands.
+This uses [Eleventy](https://www.11ty.dev) to build static HTML, so you'll need Node to get started. Then `npm install` should get you going. It optionally uses Make to perform the various common commands.
 
 Usage
 -----
