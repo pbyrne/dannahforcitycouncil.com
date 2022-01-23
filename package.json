@@ -1,4 +1,16 @@
 {
+  "name": "dannahforcitycouncil.com",
+  "description": "Source code powering Dannah Thompson's campaign website",
+  "homepage": "https://dannahforcitycouncil.com",
+  "license": "See LICENSE file",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pbyrne/dannahforcitycouncil.com"
+  },
+  "engines": {
+    "node": "~16.13.0",
+    "npm": "~8.1.2"
+  },
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-cache-assets": "^2.3.0",
