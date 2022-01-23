@@ -19,16 +19,16 @@
       <nav>
         <h1>Dannah Thompson for Roseville City Council</h1>
         <ul>
-          {% include nav_link title: "My Vision for Roseville", url: "/" %}
-          {% include nav_link title: "Issues", url: "/issues/" %}
-          {% include nav_link title: "Contact & Media", url: "/contact/" %}
-          {% include nav_link title: "Volunteer & Donate", url: "/volunteer-donate/" %}
+          {% render "nav_link" title: "My Vision for Roseville", url: "/" %}
+          {% render "nav_link" title: "Issues", url: "/issues/" %}
+          {% render "nav_link" title: "Contact & Media", url: "/contact/" %}
+          {% render "nav_link" title: "Volunteer & Donate", url: "/volunteer-donate/" %}
         </ul>
       </nav>
     </header>
 
     <main>
-      {{ content | safe }}
+      {{ content }}
     </main>
 
     <hr>
@@ -40,6 +40,6 @@
       </p>
     </footer>
 
-    {% include google_analytics %}
+    {% render "google_analytics" %}
   </body>
 </html>

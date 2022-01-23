@@ -21,7 +21,7 @@ I have set a bold vision for Roseville, because I believe in a future worth figh
 
 <section class="endorsements-wrapper">
 {% for endorsement in endorsements %}
-  {% include endorsement_link endorsement %}
+  {% include "endorsement_link" endorsement %}
 {% endfor %}
 </section>
 
