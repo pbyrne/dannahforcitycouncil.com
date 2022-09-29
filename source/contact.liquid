@@ -1,0 +1,50 @@
+---
+description: Contact information for and media about Dannah Thompson for Roseville City Council.
+layout: layout
+title: Contact Me
+---
+
+<h2>Mail</h2>
+
+<p class="compact">
+{% for line in contact.address -%}
+{{ line }}<br>
+{% endfor -%}
+</p>
+
+<h2>Phone</h2>
+
+{{ contact.phone }}
+
+<h2>Email</h2>
+
+<a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+
+<h2>Twitter</h2>
+
+<a href="https://twitter.com/{{ contact.twitterHandle }}">@{{ contact.twitterHandle }}</a>
+
+<h2>Facebook</h2>
+
+<a href="{{ contact.facebook }}">Dannah Thomspon for Roseville City Council</a>
+
+<h2>Campaign videos & City Council appearances</h2>
+
+<ul>
+  <li><a href="https://vimeo.com/459459691/649b975482">CTV Speakouts 2020, September 2020</a></li>
+  <li><a href="https://www.ctvnorthsuburbs.org/videos/lwv-roseville-cc/">League of Women Voters Candidates Forum, September 2020</a></li>
+  <li><a href="https://webstreaming.ctv15.org/viewer.php?streamid=3609">Supporting CommonBonds re-zoing request, June 3, 2019</a>; 1:29:09 into the video</li>
+  <li><a href="https://webstreaming.ctv15.org/viewer.php?streamid=3779">Speaking against TIF financing for Reuter Walton, September 16, 2019</a>; 46:40 into the video</li>
+</ul>
+
+<h2>Media</h2>
+
+<p>
+Find out what others are saying about my campaign.
+</p>
+
+<ul>
+  <li><a href="https://www.twincities.com/2018/10/12/elections-2018-roseville-mayor-and-city-council-candidates/">Elections 2018: Roseville mayor and city council candidates</a></li>
+  <li><a href="http://www.lillienews.com/articles/2018/10/16/letter-roseville-needs-thompson’s-voice-and-vision">Roseville Review, Keely Vandre’s Letter to the Editor</a></li>
+  <li><a href="http://www.lillienews.com/articles/2018/10/22/letter-managing-change-roseville-council-our-votes">Roseville Review, Kathy Ramundt’s Letter to the Editor</a></li>
+</ul>

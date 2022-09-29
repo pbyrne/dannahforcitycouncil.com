@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addCollection("issues", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("source/issues/*.md").
+    return collectionApi.getFilteredByGlob("source/issues/*.liquid").
       filter(item => item.data.order).
       sort((a, b) => a.data.order - b.data.order) // a - b: ascending, b - a: descending
   })
