@@ -5,13 +5,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ pageTitle }}</title>
-    <meta property="og:url" content="{{ page.url }}"}>
+    <link rel="stylesheet" href="/stylesheets/site.css" />
+    <script src="/javascripts/site.js" type="module"></script>
+    <meta property="og:url" content="{{ page.url }}">
     <meta property="og:title" content="{{ pageTitle }}">
     <meta property="og:description" content="{{ pageDescription }}">
     <meta property="og:site_name" content="{{ settings.siteName }}">
     <meta property="og:image" content="/images/dannah-portrait.jpg">
-    <link rel="stylesheet" href="/stylesheets/site.css" />
-    <script src="/javascripts/site.js"></script>
   </head>
   <body class="{{ bodyClasses | join: " " }}">
 

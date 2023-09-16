@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./_site/**/*.html"
+    "./_site/**/*.html",
   ],
   theme: {
     extend: {
@@ -20,8 +20,5 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 }
+
