@@ -2,18 +2,9 @@
 publish = "_site"
 
 [build.environment]
-NODE_VERSION = "16.4.0"
+NODE_VERSION = "18.17.0"
 
-[build.processing]
-skip_processing = false
-
-[build.processing.css]
-bundle = true
-minify = false
-
-[build.processing.js]
-bundle = true
-minify = false
-
-[build.processing.images]
-compress = true
+[dev]
+command = "make serve"
+port = 8000
+targetPort = 8080

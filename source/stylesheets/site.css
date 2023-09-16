@@ -18,40 +18,40 @@ header {
   @apply text-center;
   @apply text-gray-100;
   @apply w-screen;
+}
 
-  & nav {
-    @apply max-w-full;
-    @apply md:max-w-3xl;
-    @apply mx-auto;
-  }
+header nav {
+  @apply max-w-full;
+  @apply md:max-w-3xl;
+  @apply mx-auto;
+}
 
-  & h1 {
-    @apply text-3xl;
-    @apply py-2;
-  }
+header h1 {
+  @apply text-3xl;
+  @apply py-2;
+}
 
-  & ul {
-    @apply list-none;
+header ul {
+  @apply list-none;
+}
 
-    & li {
-      @apply inline-block;
-      @apply mx-1.5;
-      @apply px-1;
-      @apply py-0.5;
-      @apply rounded-t;
-      @apply text-lg;
-    }
+header ul li {
+  @apply inline-block;
+  @apply mx-1.5;
+  @apply px-1;
+  @apply py-0.5;
+  @apply rounded-t;
+  @apply text-lg;
+}
 
-    & li.current {
-      @apply text-purple-900;
-      @apply bg-gray-100;
-    }
+header ul li.current {
+  @apply text-purple-900;
+  @apply bg-gray-100;
+}
 
-    & li:hover {
-      @apply text-gray-100;
-      @apply bg-purple-400;
-    }
-  }
+header ul li:hover {
+  @apply text-gray-100;
+  @apply bg-purple-400;
 }
 
 hr {
@@ -64,10 +64,10 @@ hr {
 footer {
   @apply text-center;
   @apply my-4;
+}
 
-  & .breakout {
-    @apply block;
-  }
+footer .breakout {
+  @apply block;
 }
 
 
@@ -75,40 +75,39 @@ main {
   @apply max-w-full;
   @apply md:max-w-3xl;
   @apply mx-auto;
+}
 
-  & blockquote {
-    @apply bg-purple-400;
-    @apply italic;
-    @apply m-4;
-    @apply p-4;
-    @apply rounded-lg;
-    @apply text-center;
-    @apply text-gray-100;
-  }
+main blockquote {
+  @apply bg-purple-400;
+  @apply italic;
+  @apply m-4;
+  @apply p-4;
+  @apply rounded-lg;
+  @apply text-center;
+  @apply text-gray-100;
+}
 
-  & h2 {
-    @apply font-medium;
-    @apply mt-2;
-    @apply text-3xl;
-  }
+main h2 {
+  @apply font-medium;
+  @apply mt-2;
+  @apply text-3xl;
+}
 
+main h3 {
+  @apply font-medium;
+  @apply mt-3;
+}
 
-  & h3 {
-    @apply font-medium;
-    @apply mt-3;
-  }
+main a {
+  @apply underline;
+}
 
-  & a {
-    @apply underline;
-  }
+main p {
+  @apply mb-2;
+}
 
-  & p {
-    @apply mb-2;
-
-    &.compact {
-      @apply leading-none;
-    }
-  }
+main p.compact {
+  @apply leading-none;
 }
 
 .inset-right {
@@ -120,20 +119,18 @@ main {
   @apply flex;
   @apply flex-1;
   @apply flex-wrap;
-
-  & .endorsement-logo {
-    @apply inline-block;
-    @apply bg-white;
-    @apply w-1/2;
-  }
 }
 
-.message--title {
-  & .message--title-anchor {
-    visibility: hidden;
-  }
+.endorsements-wrapper .endorsement-logo {
+  @apply inline-block;
+  @apply bg-white;
+  @apply w-1/2;
+}
 
-  &:hover .message--title-anchor {
-    visibility: visible;
-  }
+.message--title .message--title-anchor {
+  visibility: hidden;
+}
+
+.message--title:hover .message--title-anchor {
+  visibility: visible;
 }
