@@ -1,0 +1,9 @@
+:root {
+  /* colors */
+  --black: oklch(27.81% 0.03 256.85);
+  --white: oklch(95.12% 0.003 325.6);
+  --purple-dark: oklch(23.66% 0.053 298.73);
+  --purple-light: oklch(56.91% 0.075 284.69);
+
+  --content-width: 48rem;
+}

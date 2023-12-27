@@ -30,13 +30,6 @@ module.exports = function(eleventyConfig) {
         assetsInlineLimit: 0, // Don't inline assets, since we want to keep the markup small
         manifest: true,
       },
-      css: {
-        postcss: {
-          plugins: [
-            require("tailwindcss"),
-          ],
-        },
-      },
     },
   })
 

@@ -1,0 +1,12 @@
+.breakout {
+  display: block;
+}
+
+.compact {
+  line-height: 1;
+}
+
+.inset-right {
+  float: right;
+  margin: 0.5rem;
+}
