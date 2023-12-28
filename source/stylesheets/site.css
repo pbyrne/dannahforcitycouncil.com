@@ -1,136 +1,116 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* $brand_dark: #221834; */
-/* $brand_medium: #7271a1; */
+@import "_reset";
+@import "_variables";
+@import "_atoms";
 
 body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
   font-size: 20px;
-  @apply bg-purple-10;
-  @apply font-light;
-  @apply font-sans;
-  @apply text-gray-800;
+  font-weight: 300;
 }
 
 header {
-  @apply bg-purple-900;
-  @apply text-center;
-  @apply text-gray-100;
-  @apply w-screen;
-}
+  background-color: var(--purple-dark);
+  color: var(--white);
+  text-align: center;
+  width: 100vw;
 
-header nav {
-  @apply max-w-full;
-  @apply md:max-w-3xl;
-  @apply mx-auto;
-}
+  & nav {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--content-width);
+  }
 
-header h1 {
-  @apply text-3xl;
-  @apply py-2;
-}
+  & h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
 
-header ul {
-  @apply list-none;
-}
+  & ul {
+    list-style-type: none;
+  }
 
-header ul li {
-  @apply inline-block;
-  @apply mx-1.5;
-  @apply px-1;
-  @apply py-0.5;
-  @apply rounded-t;
-  @apply text-lg;
-}
+  & li {
+    display: inline-block;
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+    padding: .125rem .25rem;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 
-header ul li.current {
-  @apply text-purple-900;
-  @apply bg-gray-100;
-}
+  & li.current {
+    color: var(--purple-dark);
+    background: var(--white);
+  }
 
-header ul li:hover {
-  @apply text-gray-100;
-  @apply bg-purple-400;
+  & li:hover {
+    color: var(--white);
+    background: var(--purple-light);
+  }
 }
 
 hr {
-  @apply border-purple-400;
-  @apply border-t;
-  @apply mx-10;
-  @apply my-4;
+  border-color: var(--purple-dark);
+  border-top-width: 1px;
+  margin: 1rem 2.5rem;
+}
+
+main {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  & blockquote {
+    background-color: var(--purple-light);
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-style: italic;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  & h2 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    margin-top: 0.5rem;
+  }
+
+  & h3 {
+    font-weight: 500;
+    margin-top: 0.75rem;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+
+  & p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 footer {
-  @apply text-center;
-  @apply my-4;
-}
-
-footer .breakout {
-  @apply block;
-}
-
-
-main {
-  @apply max-w-full;
-  @apply md:max-w-3xl;
-  @apply mx-auto;
-}
-
-main blockquote {
-  @apply bg-purple-400;
-  @apply italic;
-  @apply m-4;
-  @apply p-4;
-  @apply rounded-lg;
-  @apply text-center;
-  @apply text-gray-100;
-}
-
-main h2 {
-  @apply font-medium;
-  @apply mt-2;
-  @apply text-3xl;
-}
-
-main h3 {
-  @apply font-medium;
-  @apply mt-3;
-}
-
-main a {
-  @apply underline;
-}
-
-main p {
-  @apply mb-2;
-}
-
-main p.compact {
-  @apply leading-none;
-}
-
-.inset-right {
-  @apply float-right;
-  @apply m-2;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .endorsements-wrapper {
-  @apply flex;
-  @apply flex-1;
-  @apply flex-wrap;
-}
+  display: flex;
+  flex: 1 1 0%;
+  flex-wrap: wrap;
 
-.endorsements-wrapper .endorsement-logo {
-  @apply inline-block;
-  @apply bg-white;
-  @apply w-1/2;
-}
-
-.message--title .message--title-anchor {
-  visibility: hidden;
-}
-
-.message--title:hover .message--title-anchor {
-  visibility: visible;
+  .endorsement-logo {
+    display: inline-block;
+    background-color: white; /* true white, not branding white */
+    width: 50%;
+  }
 }
