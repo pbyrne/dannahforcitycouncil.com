@@ -8,14 +8,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./source/javascripts/")
   eleventyConfig.addPassthroughCopy("./source/stylesheets")
 
-  eleventyConfig.addFilter("autoLinkedMarkdown", function(value) {
-    if ( typeof value === "undefined" ) return
-    const md = require("markdown-it")({
-      html: true,
-      linkify: true,
-    })
-
-    return md.render(value)
+  eleventyConfig.addPairedShortcode("navitem", async function(content, href) {
+    return `<li><a href="${href}" aria-current="${href === this.page.url ? "page" : "false"}">${content}</a></li>`
   })
 
   eleventyConfig.addCollection("issues", (collectionApi) => {
